@@ -1,6 +1,6 @@
 # Homework #2
 ## Description
-In this project, we use **B-L4S5I-IOT01A** discovery board as an IOT node sensor device. With BSP driver libraries, we retrieve the sensor values and transmit to host server via TCP sockets. The data is then being visualized. The project is built in Mbed OS environment.
+In this project, we use **B-L4S5I-IOT01A** discovery board as an IOT node sensor device. With BSP driver libraries, we retrieve the sensor values and transmit to the host server via TCP sockets. The data is then being visualized. The project is built in Mbed OS environment.
 
 ## How to run 
 1. Import program `mbed-os-example-sockets` (url: https://github.com/ARMmbed/mbed-os-example-sockets.git) into Mbed Studio.
