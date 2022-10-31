@@ -1,4 +1,4 @@
-# Homework #2
+# HW2: Socket Programming and Data Visualization
 ## Description
 In this project, we use **B-L4S5I-IOT01A** discovery board as an IOT node sensor device. With BSP driver libraries, we retrieve the sensor values and transmit to the host server via TCP sockets. The data is then being visualized. The project is built in Mbed OS environment.
 
