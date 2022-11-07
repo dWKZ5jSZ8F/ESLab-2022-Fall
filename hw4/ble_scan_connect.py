@@ -72,9 +72,6 @@ try:
         # target_ch = int("0x" + str(input("Target characteristic: ")), 16)
         ch = dev.getCharacteristics(uuid=UUID(0xa001))[0]
         # print("Characteristic properties: ", ch.propertiesToString())
-    # for i in ch.getDescriptors(forUUID=UUID(0x2902)):
-    #     print(str(i))
-    # ch.write(input("Write something: ").encode('utf-8'), withResponse=True)
         cccd = ch.getHandle() + 1
         dev.writeCharacteristic(cccd, b"\x01\x00")
     # cccd = ch.getDescriptors(forUUID=UUID(0x2902))[0]
