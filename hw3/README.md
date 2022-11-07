@@ -9,3 +9,6 @@ Linux PC (Host), Raspberry Pi 3 or above (target system), any peripheral device.
 Bootable Raspberry OS. Use `minicom` or any terminal to connect via USB-TTL.
 
 ## How to run
+1. Connect RPi3 to Linux host and log in.
+2. Run `ble_scan_connect.py`.
+3. Connect to any BLE peripheral device using particular device UUIDs. 
