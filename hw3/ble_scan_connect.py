@@ -40,9 +40,12 @@ try:
         print(str(chars), ": ", str(chars.uuid))
     target_ch = int("0x" + str(input("Target characteristic: ")), 16)
     ch = dev.getCharacteristics(uuid=UUID(target_ch))[0]
+    print("Characteristic properties: ", ch.propertiesToString())
     ch.write(input("Write something: ").encode('utf-8'), withResponse=True)
     cccd = ch.getHandle() + 1
     dev.writeCharacteristic(cccd, b"\x01\x00")
+    des = ch.getDescriptors(forUUID=UUID(0x2902))[0]
+    des.write(b"\x01\x00",True)
     print("Receive something, waiting")
     while True:
         if dev.waitForNotifications(5.0):
