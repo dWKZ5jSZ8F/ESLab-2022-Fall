@@ -1,9 +1,9 @@
 # HW7: Mbed-DSP programming 
 ## Description
+In this homework, we use **CMSIS-DSP* framework for ARM CORTEX based microcontroller to perform digital signal processing on input sensor values. In this instance, I implemented a lowpass FIR filter on input 3D accelerators values.  
 
 ## How to run 
-### BLE peripheral (GATT server)
-1. Import files from Github repo `mbed-os-example-ble/BLE_GattServer_AddService/` (url: https://github.com/ARMmbed/mbed-os-example-ble) into Mbed Studio.
+1. Build a new program in Mbed Studio.
 2. Import `BSP_B-L475E-IOT01` (url: https://os.mbed.com/teams/ST/code/BSP_B-L475E-IOT01/) driver library for the magnetometer sensors.
 3. Replace or add files under`~\source\` directory and `~\mbed_app.json`.
 4. Build and compile the program. (Check if the baud rate in the terminal is synchronized, in this case 115200, such that the output would not be corrupted.)
